@@ -1,0 +1,70 @@
+[0m14:43:53.714058 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023078B1CA00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002307AD4F220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002307AD4F4C0>]}
+
+
+============================== 14:43:53.721203 | 9a7cb30f-2fe5-4da6-9a92-935a55fd61da ==============================
+[0m14:43:53.721203 [info ] [MainThread]: Running with dbt=1.5.2
+[0m14:43:53.722911 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\soiss\\.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m14:43:53.725922 [debug] [MainThread]: Starter project path: C:\Users\soiss\dev\dbt\venv\lib\site-packages\dbt\include\starter_project
+[0m14:45:56.427177 [error] [MainThread]: Encountered an error:
+
+[0m14:45:56.433205 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\soiss\dev\dbt\venv\lib\site-packages\dbt\cli\requires.py", line 86, in wrapper
+    result, success = func(*args, **kwargs)
+  File "C:\Users\soiss\dev\dbt\venv\lib\site-packages\dbt\cli\requires.py", line 71, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\soiss\dev\dbt\venv\lib\site-packages\dbt\cli\main.py", line 457, in init
+    results = task.run()
+  File "C:\Users\soiss\dev\dbt\venv\lib\site-packages\dbt\task\init.py", line 307, in run
+    self.create_profile_from_target(adapter, profile_name=project_name)
+  File "C:\Users\soiss\dev\dbt\venv\lib\site-packages\dbt\task\init.py", line 180, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "C:\Users\soiss\dev\dbt\venv\lib\site-packages\dbt\task\init.py", line 164, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+  File "C:\Users\soiss\dev\dbt\venv\lib\site-packages\dbt\task\init.py", line 130, in generate_target_from_input
+    target[key] = click.prompt(
+  File "C:\Users\soiss\dev\dbt\venv\lib\site-packages\click\termui.py", line 166, in prompt
+    value = prompt_func(prompt)
+  File "C:\Users\soiss\dev\dbt\venv\lib\site-packages\click\termui.py", line 149, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m14:45:56.437280 [debug] [MainThread]: Command `dbt init` failed at 14:45:56.437280 after 122.74 seconds
+[0m14:45:56.439269 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023078B1CA00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002307B56F9A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002307B56CB50>]}
+[0m14:45:56.440210 [debug] [MainThread]: Flushing usage events
+[0m14:46:03.414378 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021D68D3CA00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021D6AF6F250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021D6AF6F4F0>]}
+
+
+============================== 14:46:03.418153 | c192d3c9-19e4-4e46-8313-758c14982267 ==============================
+[0m14:46:03.418153 [info ] [MainThread]: Running with dbt=1.5.2
+[0m14:46:03.419161 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\soiss\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m14:46:03.421165 [info ] [MainThread]: A project called dbtlearn already exists here.
+[0m14:46:03.422161 [debug] [MainThread]: Command `dbt init` succeeded at 14:46:03.422161 after 0.02 seconds
+[0m14:46:03.423153 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021D68D3CA00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021D6AF6F4F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021D6AF6F130>]}
+[0m14:46:03.423153 [debug] [MainThread]: Flushing usage events
+[0m15:20:19.479916 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000118766FCA00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001187892F250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001187892F4F0>]}
+
+
+============================== 15:20:19.484102 | bc6aad4c-a65b-4c34-89b1-65fb96d98a03 ==============================
+[0m15:20:19.484102 [info ] [MainThread]: Running with dbt=1.5.2
+[0m15:20:19.485270 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\soiss\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m15:20:19.487699 [debug] [MainThread]: Starter project path: C:\Users\soiss\dev\dbt\venv\lib\site-packages\dbt\include\starter_project
+[0m15:32:07.081738 [info ] [MainThread]: Profile dbttrain written to C:\Users\soiss\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m15:32:07.084813 [info ] [MainThread]: 
+Your new dbt project "dbttrain" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:32:07.088807 [debug] [MainThread]: Command `dbt init` succeeded at 15:32:07.088807 after 707.62 seconds
+[0m15:32:07.090758 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000118766FCA00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011876B2E590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001187892F580>]}
+[0m15:32:07.093812 [debug] [MainThread]: Flushing usage events

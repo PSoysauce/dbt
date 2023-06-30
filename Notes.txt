@@ -1,0 +1,5 @@
+edaayea-ke46732
+psoy
+
+C:\Users\soiss\dev\dbt
+venv\Scripts\activate
